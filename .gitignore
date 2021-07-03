@@ -1,0 +1,11 @@
+API_key/
+autoCapt.pem
+extensionVersions.pem
+extensionVersions/
+autoCapt/__pycache__/
+autoCapt/testResult/
+autoCapt/0.2.1_0
+*.crx
+*.pem
+autoCapt/chromedriver.exe
+autoCapt/hello.txt
