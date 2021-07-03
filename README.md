@@ -1,4 +1,4 @@
-"# AutoScreenScpture" (광고차단 익스텐션 테스트)
+# AutoScreenScpture (광고차단 익스텐션 테스트)
 
 ## 목적
 광고 차단 익스텐션 필터 개발 작업 중,<br>
