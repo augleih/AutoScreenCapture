@@ -54,7 +54,7 @@ options.add_argument('User-Agent={Mozilla/5.0 (Windows NT 10.0; Win64; x64) Appl
 # 사용자 로그인 환경 설정
 #options.add_argument('--user-data-dir=C:\\Users\\augle\\AppData\\Local\\Google\\Chrome\\User Data')
 # 블로켓 익스텐션 포함 실행
-options.add_extension('C:\\Users\\augle\\Desktop\\develop\\bloket_autoTester\\desktop\\autoCapt\\0.2.1_0.crx')
+options.add_extension('C:\\Users\\augle\\Desktop\\develop\\bloket_autoTester\\desktop\\autoCapt\\0.3.0_0.crx')
 # 개발자 도구 여는 옵션
 #options.add_argument('--auto-open-devtools-for-tabs')
 # normal load 방식 (headless에서 fullscreen 기능 사용시 필요)
