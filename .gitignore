@@ -4,7 +4,7 @@ extensionVersions.pem
 extensionVersions/
 autoCapt/__pycache__/
 autoCapt/testResult/
-autoCapt/0.2.1_0
+autoCapt/0.3.0_0
 *.crx
 *.pem
 autoCapt/chromedriver.exe
