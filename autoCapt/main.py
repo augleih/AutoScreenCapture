@@ -10,12 +10,10 @@ import os
 # takeScreenShot: hide element 기능 off
 # Screenshot_Clipping: hide element 기능 on
 if __name__ == "__main__" or __name__ == "decimal":
-    import takeScreenShot
     import Screenshot_Clipping
     import gSheet
     
 else:
-    from . import takeScreenShot
     from . import Screenshot_Clipping
     from . import gSheet
 
@@ -61,7 +59,7 @@ options.add_extension('C:\\Users\\augle\\Desktop\\develop\\bloket_autoTester\\de
 #options.page_load_strategy = 'normal'
 
 driver = webdriver.Chrome(executable_path=r'C:\\Users\\augle\\Downloads\\chromedriver_win32\\chromedriver.exe', options=options)
-driver.implicitly_wait(10)
+driver.implicitly_wait(15)
 
 driver.maximize_window()
 scrObj = Screenshot_Clipping.Screenshot
@@ -73,7 +71,7 @@ title = gSheet.getTitle()
 for i in range(1, len(urlList)):
 
     driver.get(urlList[i])
-    driver.implicitly_wait(10)
+    driver.implicitly_wait(15)
     sleep(15)
     resultImg = scrObj.full_Screenshot(scrObj, driver, f"C:\\Users\\augle\\Desktop\\bloket_test\\desktop\\testresults\\", domainList[i] + '.png')
 
