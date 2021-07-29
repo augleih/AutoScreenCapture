@@ -8,7 +8,6 @@ from math import ceil
 
 """
 
-
 시트 구성은 아래와 같습니다. (두번째 링크부터 사용, 첫번째는 익스텐션 적용용) 
  A열: URL
  B열: Domain
@@ -74,8 +73,8 @@ def getDomain():
     domains = curSheet.col_values('2')
     return domains
 
-def uploadToDrive(directory, fileName):
-    print('test')
+# def uploadToDrive(directory, fileName):
+#     print('test')
 
 getTitle()
 #title = getTitle()

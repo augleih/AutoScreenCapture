@@ -75,65 +75,7 @@ for i in range(1, len(urlList)):
     driver.get(urlList[i])
     driver.implicitly_wait(10)
     sleep(15)
-    resultImg = scrObj.full_Screenshot(scrObj, driver, f"C:\\Users\\augle\\Desktop\\bloket_test\\desktop\\{title}\\", domainList[i] + '.png')
-    
+    resultImg = scrObj.full_Screenshot(scrObj, driver, f"C:\\Users\\augle\\Desktop\\bloket_test\\desktop\\testresults\\", domainList[i] + '.png')
 
-"""
-driver.get('https://newsis.com/view/?id=NISX20210602_0001461818&cID=10523&pID=10500')
-driver.implicitly_wait(10)
-sleep(15)
-imgByAPI1 = scrObj.full_Screenshot(scrObj, driver = driver, save_path = r".", image_name = "test_newsis_class.png", load_wait_time = 10)
-"""
-
-
-
-
-
-
-
-
-
-
-#driver.get('https://newtoki95.com/')
-#driver.get('https://newsis.com/view/?id=NISX20210602_0001461818&cID=10523&pID=10500')
-#driver.set_window_size(1200, 760)
-
-#ob = Screenshot_Clipping.Screenshot()
-#screenshot by API
-#imgByAPI1 = ob.full_Screenshot(driver, save_path=r".", image_name='test_API(fullCapture).png', load_wait_time = 10)
-#imgByAPI1 = full_Screenshot(..., driver = driver, save_path = r".", image_name = "test_API(fullCapture).png", load_wait_time = 10)
-#screen = Image.open(img_result)
-#screen.show()
-
-# screenshot by API (capture element) < 별로임
-"""
-element = driver.find_element_by_tag_name('body')
-driver.set_window_position(-400, 0)
-imgByAPI2 = ob.get_element(driver, element, 'test_API(element).png')
-"""
-# screenshot by lambda < headless 모드 아니면 작동 안함
-"""
-S = lambda X: driver.execute_script('return document.body.parentNode.scroll' + X)
-driver.set_window_size(S('Width'), S('Height'))
-driver.find_element_by_tag_name('body').screenshot('test_lambda.png')
-"""
-# screenshot by chrome DevTools < 스크립트로 불러오는 영역 캡쳐 불가
-"""
-page_rect = driver.execute_cdp_cmd("Page.getLayoutMetrics", {})
-imgByDT = driver.execute_cdp_cmd("Page.captureScreenshot",
-{
-    "format": "png",
-    "captureBeyondViewport": True,
-    "clip": {
-        "width": page_rect["contentSize"]["width"],
-        "height": page_rect["contentSize"]["height"],
-        "x": 0,
-        "y": 0,
-        "scale": 1
-    }
-})
-with open("C:\\Users\\augle\\Desktop\\develop\\test_DevTools.png", "wb") as file:
-    file.write(base64.urlsafe_b64decode(imgByDT["data"]))
-"""
 driver.close()
 driver.quit()
